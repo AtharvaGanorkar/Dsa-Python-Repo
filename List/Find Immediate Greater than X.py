@@ -20,3 +20,5 @@ def immediateGreater(arr,n,x):
         return res[0]
 
 print(immediateGreater(arr,n,x))
+
+
