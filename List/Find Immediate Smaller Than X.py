@@ -1,4 +1,4 @@
-N = 5
+'''N = 5
 arr = [4,67,13,12,15] 
 X = 16
 
@@ -22,4 +22,7 @@ def immediateSmaller(arr,N,X):
                     closest_smaller = num
         return closest_smaller
 
-print(immediateSmaller(arr,N,X))
+print(immediateSmaller(arr,N,X))'''
+
+
+
