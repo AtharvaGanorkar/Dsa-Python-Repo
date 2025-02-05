@@ -17,7 +17,8 @@ def Firstoccurance(arr,low,high,x):
 
 
 # +++++++++++++++++++++ ITTERATIVE APPROACH +++++++++++++++++++++++++++++++
-
+arr = [10,30,20,20,30,40]
+x = 10
 def FirstOccurance(x):
     low = 0
     high = len(arr)-1
@@ -34,3 +35,4 @@ def FirstOccurance(x):
                 high = mid-1
     return -1
 
+print(FirstOccurance(x))
