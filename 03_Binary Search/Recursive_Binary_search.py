@@ -3,7 +3,7 @@
 def Bsearch(l,x,low,high):
     if low > high:
         return -1
-    mid = (low+high)//2
+    mid = low + (high - low)//2
     if l[mid] == x:
         return mid
     elif l[mid] > x:
