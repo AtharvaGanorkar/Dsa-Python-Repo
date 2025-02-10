@@ -36,3 +36,10 @@ def findFloor(self,arr,k):
         
         return floor
         
+
+def findFloor(self,arr,k):
+        res = -1
+        for i in range(0,len(arr)):
+            if arr[i] <= k:
+                res = i
+        return res
