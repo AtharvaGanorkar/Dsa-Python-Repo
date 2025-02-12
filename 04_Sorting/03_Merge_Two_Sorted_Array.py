@@ -23,4 +23,4 @@ def MergeTwoArrayInSortedManner(a,b):
                   j +=1
             return res
 
-print(MergeTwoArrayInSortedMannee(a,b))
+print(MergeTwoArrayInSortedManner(a,b))
