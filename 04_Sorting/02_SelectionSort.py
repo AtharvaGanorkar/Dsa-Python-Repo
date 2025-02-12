@@ -12,3 +12,6 @@ arr = [10,5,8,20,2,18]
 
 SelectionSort(arr)
 print(arr)
+
+
+# Selection sort is not a stable sorting algorithm.
