@@ -2,7 +2,7 @@ a = [10,15]
 b = [5,6,6,30,40]
 res = []
 
-def MergeTwoArrayInSortedMannee(a,b):
+def MergeTwoArrayInSortedManner(a,b):
             res = []
             m = len(a)
             n = len(b)
