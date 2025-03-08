@@ -23,3 +23,4 @@ def LinearProbing(arr,hashSize,sizeOfArray):
                 table[k] = arr[i]   
     
     return table
+
