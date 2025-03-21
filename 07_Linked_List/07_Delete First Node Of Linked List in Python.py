@@ -17,7 +17,10 @@ def Del(head):
     if head == None:
         return None
     else:
-        return head.next
+        temp = head
+        head = head.next
+        del temp
+        return head
     
 
 head = Del(head)
