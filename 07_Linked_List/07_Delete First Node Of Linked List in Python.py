@@ -19,6 +19,7 @@ def Del(head):
     else:
         temp = head
         head = head.next
+        temp.next = None
         del temp
         return head
     
