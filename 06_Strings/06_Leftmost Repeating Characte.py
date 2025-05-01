@@ -14,14 +14,20 @@ def leftmost(str):
             return i
     return -1
 
-def leftmost(st):
-    char_map = {}
-    res = -1
-    for i in range(len(st)-1, -1, -1):
-        if st[i] in char_map:
-            res = i
-        else:
-            char_map[st[i]] = True
-    return res
+# Leftmost Repeating Character
+# Efficient 2
 
-print(leftmost("abccbd"))  # Output: 1
+CHAR = 256
+def leftmost(st) :
+    vis = [False] * CHAR
+    res = -1
+    for i in range(len(st)-1,-1,-1) :
+        if (vis[ord(st[i])]==True) :
+            res = i
+        else :
+            vis[ord(st[i])] = True
+    
+    return res
+        
+st = "abccbd"
+print(leftmost(st))
