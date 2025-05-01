@@ -6,5 +6,6 @@ def Rotation_of_Each_Other(s1,s2):
         return False
     temp = ""
     temp = s1+s2
-    return temp.find(s2) != -1
+    return True if temp.find(s2) else False
 
+print(Rotation_of_Each_Other(s1,s2))
