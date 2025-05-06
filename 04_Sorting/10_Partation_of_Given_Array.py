@@ -3,11 +3,13 @@ p = 5
 a = []
 b = []
 def Partation(l,p):
-    c = l[p]
+    n = len(l)
+    l[p],l[n-1] = l[n-1],l[p]
+    c = l[n-1]
     for i in l:
-        if i <= l[p] :
+        if i <= c :
             a.append(i)
-        if i > l[p]:
+        if i > c:
             b.append(i)
 
     return a + b
@@ -16,7 +18,7 @@ print(Partation(l,p))
 
 
 def Partition(l,p):
-    n = len(l)
+    n = len(l) 
     l[p],l[n-1] = l[n-1],l[p]
     temp = []
 
@@ -30,6 +32,8 @@ def Partition(l,p):
     for i in range(len(l)):
         l[i] = temp[i]
 
-    return l
 
-print(Partition(l,p))
+l = [10, 80, 30, 90, 40, 50, 70]
+p = 1
+Partition(l,p)
+print(*l)
