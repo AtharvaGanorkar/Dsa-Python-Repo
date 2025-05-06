@@ -17,7 +17,7 @@ Explanation: An array that is already sorted should remain unchanged after apply
 def BubbleSort(arr):
     n = len(arr)
     for i in range(n-1):
-        swapped = True
+        swapped = False
         for j in range(n-i-1):
             if arr[j]>arr[j+1]:
                 arr[j],arr[j+1] = arr[j+1],arr[j]
@@ -26,6 +26,8 @@ def BubbleSort(arr):
         if swapped == False:
             return
         
+arr = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+BubbleSort(arr)
 
 def BubbleSort(arr):
     n = len(arr)
@@ -33,4 +35,5 @@ def BubbleSort(arr):
         for j in range(n-i-1):
             if arr[j]>arr[j+1]:
                 arr[j],arr[j+1] = arr[j+1],arr[j]
-                
+
+BubbleSort(arr= [10, 9, 8, 7, 6, 5, 4, 3, 2, 1])               
