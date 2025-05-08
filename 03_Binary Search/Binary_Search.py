@@ -4,16 +4,21 @@ l2 = [5,15,25]
 # +++++++++++++++++++++++++++++ LINEAR SEARCH +++++++++++++++++
 
 
-def IndexOf(n):
-    count = 0
-    for i in l:
-        count +=1
-        if l[count] == n:
-            return count
-        else:
-            return -1
+def Search(arr,num):
+    n = len(arr)-1
+    if num < arr[0] or num > arr[n]:
+        return -1
+    
+    for i in range(0,n+1):
+        if arr[i] == num:
+            return i
+    return -1
 
-print(IndexOf(80))
+# arr = [5,10,15,25,35]
+# num = 25
+arr = [10,10]
+num = 10
+print(Search(arr,num))
 
 # ++++++++++++++++++++++ BINARY SEARCH +++++++++++++++++++++++++
 
